@@ -49,7 +49,7 @@ public class Page2 extends Activity implements OnGestureListener {
 		try {
 	           if (Math.abs(e1.getY() - e2.getY()) > SWIPE_MAX_OFF_PATH)
 	               return false;
-	           // right to left swipe
+	           // right to left swipe2
 	           if(e1.getX() - e2.getX() > SWIPE_MIN_DISTANCE && Math.abs(velocityX) > SWIPE_THRESHOLD_VELOCITY) {
 	        	   
 	               Toast.makeText(this, "<---- Left Swipe", Toast.LENGTH_SHORT).show();
@@ -100,4 +100,9 @@ public class Page2 extends Activity implements OnGestureListener {
 		return false;
 	}
 	 
+	
+	public boolean onSingleTapUp22(MotionEvent e) {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }
