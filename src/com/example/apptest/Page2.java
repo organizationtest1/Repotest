@@ -52,7 +52,7 @@ public class Page2 extends Activity implements OnGestureListener {
 	           // right to left swipe
 	           if(e1.getX() - e2.getX() > SWIPE_MIN_DISTANCE && Math.abs(velocityX) > SWIPE_THRESHOLD_VELOCITY) {
 	        	   
-	               Toast.makeText(this, "<---- Left Swipe??", Toast.LENGTH_SHORT).show();
+	               Toast.makeText(this, "<---- Left Swipe", Toast.LENGTH_SHORT).show();
 	               Intent myIntent = new Intent(this, Page2.class);
 	           	   startActivity(myIntent);
 	               
